@@ -1,0 +1,43 @@
+.msgContainer {
+  position: fixed;
+  top: 20vh;
+  left: calc(50vw - 200px);
+  width: 400px;
+  background: transparent;
+}
+
+.singleMsg {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  background: white;
+  text-align: center;
+  padding: 20px 0px;
+  position: relative;
+  border-radius: 2px;
+}
+
+.singleMsg i {
+  position: absolute;
+  top: 10px;
+  left: -21px;
+  z-index: 999;
+  color: white;
+}
+
+.warningMsg {
+  border: 2px solid  red;
+  border-left: 25px solid  red;
+}
+
+.informationMsg {
+  border: 2px solid  green;
+  border-left: 25px solid  green;
+}
+
+@media (max-width: 660px) {
+  .msgContainer {
+    left: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

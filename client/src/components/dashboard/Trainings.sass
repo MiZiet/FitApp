@@ -1,0 +1,214 @@
+$specialColor : #332E3C
+$bckgrnd: #D1CCDC
+
+
+.trainingsContainer
+    margin-left: 250px
+    
+.trainingsHeader
+    padding: 0px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid $specialColor
+
+.trainingsContent
+    display: flex
+    flex-wrap:  wrap
+    justify-content: space-evenly
+
+.stElCont
+    display: flex
+    margin: 5px 5px
+
+.stElement
+    margin: 10px
+    width: 300px
+    h1 
+        padding-right: 30px
+        text-decoration: underline
+        text-align: right
+
+    table
+        border-collapse: collapse
+
+        td, th
+            font-size: 1.5rem
+            width: 100px
+            text-align: center
+            
+
+        td
+            border-bottom: 1px solid $specialColor
+            padding: 5px 5px 2px 5px
+        th  
+            padding: 5px 5px 10px 5px
+
+.stElButtons
+    display: flex
+    flex-direction: column
+    margin-top: 10px
+
+    button 
+        margin: 2px 2px
+        font-size: 2rem
+        padding: 3px
+        border-radius: 20%
+        cursor: pointer
+
+        &:first-child
+            background-color: #E4572E
+
+        &:nth-child(2)
+            background-color: #F5DD90
+
+        &:last-child
+            background-color: #33CA7F
+
+        &:hover 
+            opacity: 0.8
+
+.trainingFooter
+    
+    display: flex 
+    flex-direction: column 
+    justify-content: space-around
+    position: fixed
+    bottom: 0
+    left: 252px
+    button
+        background-color: $bckgrnd
+        cursor: pointer
+        border: none
+        padding: 10px
+        font-size: 4rem
+        &:first-child
+            border-radius: 0px 10px 0px 0px
+            background-color: #33CA7F
+            border-top: 1px solid black
+            border-right: 1px solid black
+
+        &:nth-child(2)
+            background-color: #F5DD90
+            border-right: 1px solid black
+        &:last-child
+            background-color: #E4572E
+            border-right: 1px solid black
+        
+        &:first-child
+            span
+                font-size: 1.5rem
+                display: none
+                position: absolute
+                right: -115px
+                top: 30px
+                background: white
+
+        &:nth-child(2)
+            span
+                font-size: 1.5rem
+                display: none
+                position: absolute
+                right: -120px
+                top: 100px
+                background: white
+
+        &:nth-child(3)
+            span
+                font-size: 1.5rem
+                display: none
+                position: absolute
+                right: -130px
+                top: 180px
+                background: white
+        &:hover
+            span
+                display: block       
+
+
+
+
+.modal 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+
+.modal-main 
+    position: fixed;
+    background: white;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+    form
+        
+        padding: 50px 50px
+        display: flex
+        flex-direction: column
+
+        label
+            font-size: 1.5rem
+
+        input
+            width: 300px
+            height: 2rem
+            font-size: 1.5rem
+            border: 1px solid $specialColor 
+            border-radius: 2px
+            margin: 26px 0 
+
+        .subBut
+            font-family: "Comfortaa", cursive
+            background-color: $specialColor
+            font-weight: bold
+            color: white
+            font-size: 1.5rem
+            padding: 8px 0px
+            border-radius: 2px
+            border: 1px solid black
+            cursor: pointer
+            &:hover 
+                opacity: 0.9
+
+.closeButton
+    position: absolute
+    right: 0
+    font-size: 2rem
+    background-color: #E4572E
+    cursor: pointer
+
+    &:hover 
+        opacity: 0.9
+
+.display-block 
+    display: block;
+
+
+.display-none 
+    display: none;
+
+
+
+
+@media (max-width: 660px)       
+    .stElement
+        width: 100%
+
+        table  
+            margin: 0px auto
+
+        h1 
+            text-align: center
+
+    .trainingsContainer
+        margin-left: 0px
+        margin-top: 60px
+
+    .trainingFooter
+        left: 0px

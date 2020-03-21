@@ -1,0 +1,270 @@
+.trainingsContainer {
+  margin-left: 250px;
+}
+
+.trainingsHeader {
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #332E3C;
+}
+
+.trainingsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.stElCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 5px;
+}
+
+.stElement {
+  margin: 10px;
+  width: 300px;
+}
+
+.stElement h1 {
+  padding-right: 30px;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.stElement table {
+  border-collapse: collapse;
+}
+
+.stElement table td, .stElement table th {
+  font-size: 1.5rem;
+  width: 100px;
+  text-align: center;
+}
+
+.stElement table td {
+  border-bottom: 1px solid #332E3C;
+  padding: 5px 5px 2px 5px;
+}
+
+.stElement table th {
+  padding: 5px 5px 10px 5px;
+}
+
+.stElButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.stElButtons button {
+  margin: 2px 2px;
+  font-size: 2rem;
+  padding: 3px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.stElButtons button:first-child {
+  background-color: #E4572E;
+}
+
+.stElButtons button:nth-child(2) {
+  background-color: #F5DD90;
+}
+
+.stElButtons button:last-child {
+  background-color: #33CA7F;
+}
+
+.stElButtons button:hover {
+  opacity: 0.8;
+}
+
+.trainingFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 252px;
+}
+
+.trainingFooter button {
+  background-color: #D1CCDC;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  font-size: 4rem;
+}
+
+.trainingFooter button:first-child {
+  border-radius: 0px 10px 0px 0px;
+  background-color: #33CA7F;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.trainingFooter button:nth-child(2) {
+  background-color: #F5DD90;
+  border-right: 1px solid black;
+}
+
+.trainingFooter button:last-child {
+  background-color: #E4572E;
+  border-right: 1px solid black;
+}
+
+.trainingFooter button:first-child span {
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  right: -115px;
+  top: 30px;
+  background: white;
+}
+
+.trainingFooter button:nth-child(2) span {
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  right: -120px;
+  top: 100px;
+  background: white;
+}
+
+.trainingFooter button:nth-child(3) span {
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  right: -130px;
+  top: 180px;
+  background: white;
+}
+
+.trainingFooter button:hover span {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal-main form {
+  padding: 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-main form label {
+  font-size: 1.5rem;
+}
+
+.modal-main form input {
+  width: 300px;
+  height: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid #332E3C;
+  border-radius: 2px;
+  margin: 26px 0;
+}
+
+.modal-main form .subBut {
+  font-family: "Comfortaa", cursive;
+  background-color: #332E3C;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+  padding: 8px 0px;
+  border-radius: 2px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.modal-main form .subBut:hover {
+  opacity: 0.9;
+}
+
+.closeButton {
+  position: absolute;
+  right: 0;
+  font-size: 2rem;
+  background-color: #E4572E;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  opacity: 0.9;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+@media (max-width: 660px) {
+  .stElement {
+    width: 100%;
+  }
+  .stElement table {
+    margin: 0px auto;
+  }
+  .stElement h1 {
+    text-align: center;
+  }
+  .trainingsContainer {
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+  .trainingFooter {
+    left: 0px;
+  }
+}
+/*# sourceMappingURL=Trainings.css.map */

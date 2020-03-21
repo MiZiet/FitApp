@@ -1,0 +1,285 @@
+.navbarContainer {
+  background-color: #332E3C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+.navbarContainer ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.navbarContainer ::-webkit-scrollbar-track {
+  background: #332E3C;
+}
+
+.navbarContainer ::-webkit-scrollbar-thumb {
+  background: #D1CCDC;
+}
+
+.navbarContainer ::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+.userContainer {
+  border-bottom: 1px solid white;
+  margin: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.userContainer img {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.userContainer h1 {
+  padding-top: 3px;
+  padding-left: 16px;
+  font-size: 1.8rem;
+  margin: 0;
+  text-decoration: none;
+}
+
+.userContainer:hover {
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.addTraining {
+  background-color: #D1CCDC;
+  padding: 10px 5px 10px 15px;
+  margin: 0rem 0rem 0rem 0rem;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.addTraining i {
+  font-size: 2.5rem;
+}
+
+.addTraining strong {
+  font-size: 1.5rem;
+  position: relative;
+  top: -5px;
+  padding-left: 15px;
+}
+
+.addTraining:hover {
+  background: white;
+}
+
+.menu {
+  height: 100%;
+  position: relative;
+}
+
+.options {
+  position: absolute;
+  bottom: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.settings {
+  padding: 10px 113px 10px 15px;
+  border-top: 1px solid #D1CCDC;
+}
+
+.settings i {
+  font-size: 2.5rem;
+}
+
+.settings span {
+  font-size: 1.5rem;
+  position: relative;
+  top: -5px;
+  padding-left: 15px;
+}
+
+.settings:hover {
+  background: #D1CCDC;
+  color: black;
+}
+
+.logout {
+  border-top: 1px dashed #D1CCDC;
+  padding: 10px 113px 10px 15px;
+}
+
+.logout i {
+  font-size: 2.5rem;
+}
+
+.logout span {
+  font-size: 1.5rem;
+  position: relative;
+  top: -5px;
+  padding-left: 15px;
+}
+
+.logout:hover {
+  background: #D1CCDC;
+  color: red;
+}
+
+.singleTraining {
+  margin-top: 1px;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  padding: 0px 15px 0px 15px;
+}
+
+.singleTraining:hover {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.singleTrainingActive {
+  background-color: white;
+  color: black;
+  cursor: default;
+}
+
+.stDefault {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stActive {
+  text-align: right;
+  font-size: 3rem;
+  padding: 5px 5px;
+}
+
+.stActive i {
+  cursor: pointer;
+}
+
+.stActive i:first-child:hover {
+  color: #F5DD90;
+}
+
+.stActive i:last-child:hover {
+  color: #E4572E;
+}
+
+.fillMenuContainer {
+  height: calc(100% - 215px);
+  overflow-y: auto;
+}
+
+.dummy {
+  height: 300%;
+}
+
+.moblieShow {
+  display: none;
+}
+
+.navbarMobile {
+  display: none;
+}
+
+.navbarMobile ul {
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  width: 100%;
+  background: #D1CCDC;
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 2rem;
+}
+
+.navbarMobile li {
+  padding: 12px 12px;
+  border-bottom: 1px solid #332E3C;
+}
+
+.navbarMobile li span {
+  margin-left: 10px;
+}
+
+.navbarToggleButton {
+  color: #332E3C;
+  font-size: 1.5rem;
+}
+
+.emptyArraySpan {
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  right: -35px;
+  top: 15px;
+}
+
+@media (max-width: 660px) {
+  .navbarContainer {
+    width: 100%;
+    height: 48px;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .userContainer {
+    margin: 0px 5px 0px 5px;
+  }
+  .navbarMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbarMobile img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 8px;
+  }
+  .navbarMobile h1 {
+    color: white;
+    padding-top: 3px;
+    padding-left: 16px;
+    font-size: 1.8rem;
+    margin: 0;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+  .navbarToggleButton {
+    position: absolute;
+    right: 0px;
+    border: none;
+    width: 80px;
+    height: 100%;
+    background: #D1CCDC;
+  }
+  .menu {
+    display: none;
+  }
+  .moblieShow {
+    display: inline-block;
+  }
+  .mobileHide {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

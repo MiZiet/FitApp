@@ -1,0 +1,136 @@
+.backgrndCont {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-image: url("../../img/backgrounds/login.jpg");
+}
+
+.authContainer {
+  text-align: center;
+}
+
+.authContainer h1 {
+  font-family: "Pacifico", regular;
+  font-size: 5rem;
+  color: white;
+  text-shadow: -2px 0 #332E3C, 0 2px #332E3C, 2px 0 #332E3C, 0 -2px #332E3C;
+}
+
+.authContainer h1 br {
+  display: none;
+}
+
+.formDiv {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.formDiv form {
+  margin: auto;
+  text-align: left;
+}
+
+.formDiv form .textInput {
+  font-family: "Comfortaa", cursive;
+  width: 300px;
+  height: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid #332E3C;
+  border-radius: 2px;
+  margin: 8px 0;
+}
+
+.formDiv form .submitButton {
+  font-family: "Comfortaa", cursive;
+  width: 50%;
+  background-color: #332E3C;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+  padding: 8px 0px;
+  border-radius: 2px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 15px 25%;
+}
+
+.formDiv:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.switchButton {
+  border: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #332E3C;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.switchButton:hover {
+  color: blue;
+}
+
+@media (max-width: 600px) {
+  .backgrndCont {
+    background-image: url("../../img/backgrounds/loginSmall.png");
+  }
+  .authContainer {
+    width: 100%;
+  }
+  .authContainer h1 {
+    font-size: 4rem;
+  }
+  .authContainer h1 br {
+    display: inline;
+  }
+  .formDiv {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 40px 0;
+    font-size: 2.5rem;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    opacity: 0.9;
+  }
+  .formDiv form {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .formDiv form .textInput {
+    font-size: 3rem;
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+  }
+  .formDiv form .submitButton {
+    width: 100%;
+    height: 5rem;
+    font-size: 2.5rem;
+    margin: 15px 0 30px 0;
+  }
+}
+/*# sourceMappingURL=Auth.css.map */
